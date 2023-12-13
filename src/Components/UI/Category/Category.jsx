@@ -8,6 +8,7 @@ import categoryImg01 from '../../../assets/image/category-01.png'
 import categoryImg02 from '../../../assets/image/category-02.png'
 import categoryImg03 from '../../../assets/image/category-03.png'
 import categoryImg04 from '../../../assets/image/category-04.png'
+import { Link } from 'react-router-dom'
 
 
 
@@ -39,9 +40,9 @@ function Category() {
           <Col lg='3' md='4'>
               <div className="category__item d-flex align-items-center gap-3">
                 <div className="category__img">
-                  <img src={item.imgUrl} alt="category__item" />
+                 <Link to='/foods'> <img src={item.imgUrl} alt="category__item" /></Link>
                 </div>
-                <h6>{item.display}</h6>
+                <Link to='/foods'><h6>{item.display}</h6></Link>
               </div>
           </Col>
         ))

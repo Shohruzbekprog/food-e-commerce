@@ -65,8 +65,8 @@ const toggleMenu = () => menuRef.current.classList.toggle('show__menu')
       </div>
       {/* nav icons */}
       <div className="nav__right d-flex align-items-center gap-4">
-        <span className="cart__icon">
-        <i class="ri-shopping-basket-line"></i>
+        <span className="cart__icon ">
+        <Link to='/cart'><i class="ri-shopping-basket-line"></i></Link>
         <span className="cart__badge">2</span>
         </span>
         <span className="user">
